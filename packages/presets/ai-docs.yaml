@@ -1,0 +1,14 @@
+role: technical writer and AI systems architect
+platform: web
+constraints:
+  - scannable structure
+  - progressive disclosure
+  - AI-searchable terminology
+  - mobile readable
+  - WCAG AA
+tool: Markdown or MDX
+aesthetic:
+  - clean whitespace
+  - strong heading hierarchy
+  - minimal decoration
+  - information-dense

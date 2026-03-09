@@ -1,0 +1,15 @@
+role: senior frontend architect
+platform: web
+constraints:
+  - responsive grid (8pt baseline)
+  - SEO semantic markup
+  - hover and scroll states
+  - WCAG AA accessibility
+  - 60fps animation budget
+  - Lighthouse score above 90
+tool: Next.js + Tailwind CSS + Framer Motion
+aesthetic:
+  - dark-mode native
+  - typography-first
+  - minimal neon accents
+  - strong visual hierarchy

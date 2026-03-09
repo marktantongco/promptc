@@ -1,0 +1,36 @@
+name: Prompt Lint
+
+on:
+  pull_request:
+    paths:
+      - "**/*.md"
+      - "packages/**"
+      - "presets/**"
+  push:
+    branches: [main]
+
+jobs:
+  lint-prompts:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build promptc
+        run: npm run build
+
+      - name: Run prompt lint
+        run: |
+          find examples/compiled-prompts -name "*.md" | while read f; do
+            echo "Linting: $f"
+            node dist/apps/cli/index.js lint "$f"
+          done

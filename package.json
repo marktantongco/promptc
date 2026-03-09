@@ -1,0 +1,39 @@
+{
+  "name": "promptc",
+  "version": "0.1.0",
+  "description": "The Prompt Operating System — composable, versioned, testable prompts as first-class engineering artifacts",
+  "type": "module",
+  "bin": {
+    "promptc": "./dist/apps/cli/index.js"
+  },
+  "scripts": {
+    "dev": "tsx apps/cli/index.ts",
+    "build": "tsc",
+    "lint": "eslint .",
+    "start": "node dist/apps/cli/index.js"
+  },
+  "keywords": [
+    "prompt-engineering",
+    "cli",
+    "ai",
+    "llm",
+    "ui-ux",
+    "compiler",
+    "powerup",
+    "promptc"
+  ],
+  "author": "powerUP",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "commander": "^11.0.0",
+    "yaml": "^2.4.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "tsx": "^4.7.0",
+    "@types/node": "^20.11.0"
+  }
+}

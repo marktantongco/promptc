@@ -1,0 +1,15 @@
+role: senior mobile product designer
+platform: mobile
+constraints:
+  - 44px touch targets minimum
+  - gesture-first navigation
+  - safe-area aware
+  - offline resilience
+  - WCAG AA accessibility
+  - 60fps animation budget
+tool: React Native or Expo
+aesthetic:
+  - dark-mode native
+  - typography-first
+  - minimal neon accents
+  - strong visual hierarchy
