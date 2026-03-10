@@ -1,123 +1,34 @@
-# 🔥 MASTER REFERENCE — AI Prompts, Skills, Tools & Agents
+# 🧠 AI PROMPT REFERENCE
 
-**Full compilation of everything from this thread.**
-_Account: marktantongco | Repo: [github.com/marktantongco/promptc](https://github.com/marktantongco/promptc)_
+### Skills · Frameworks · Techniques · Modes · Secret Sauce
+
+_Everything an AI can reuse, apply, and be guided by._
 
 ---
 
-## 📋 Quick Index
+## 📋 Index
 
-1. [Tools & Agents Setup](#1-tools--agents-setup)
-2. [Master System Prompt](#2-master-system-prompt)
+1. [Master System Prompt](#1-master-system-prompt)
+2. [Advocate Mode](#2-advocate-mode)
 3. [Secret Sauce Modifiers](#3-secret-sauce-modifiers)
-4. [Advocate Mode Prompt](#4-advocate-mode-prompt)
-5. [Animal Thinking Modes](#5-animal-thinking-modes-7-modes)
-6. [Task-Specific Prompts](#6-task-specific-prompts)
-7. [Structured Output / JSON Techniques](#7-structured-output--json-techniques)
-8. [Web App Prompt Framework](#8-web-app-prompt-framework)
-9. [Meta Prompting — Mobile vs Web](#9-meta-prompting--mobile-vs-web)
-10. [Enhancement Protocols](#10-enhancement-protocols)
-11. [promptc CLI Reference](#11-promptc-cli-reference)
-12. [powerUP Brand System](#12-powerup-brand-system)
-13. [Prompt Quality Checklist](#13-prompt-quality-checklist)
-14. [Skills Installed](#14-skills-installed)
-15. [GitHub Deployment Guide](#15-github-deployment-guide)
+4. [Animal Thinking Modes](#4-animal-thinking-modes)
+5. [Task-Specific Prompts](#5-task-specific-prompts)
+6. [8-Layer Prompt Architecture](#6-8-layer-prompt-architecture)
+7. [Meta Prompting Framework](#7-meta-prompting-framework)
+8. [Enhancement Protocols](#8-enhancement-protocols)
+9. [Structured Output / JSON Techniques](#9-structured-output--json-techniques)
+10. [Web App Prompt Framework](#10-web-app-prompt-framework)
+11. [powerUP Brand System Prompt](#11-powerup-brand-system-prompt)
+12. [Design Vocabulary Reference](#12-design-vocabulary-reference)
+13. [Prompt Lint Rules](#13-prompt-lint-rules)
+14. [Prompt Quality Checklist](#14-prompt-quality-checklist)
+15. [Prompt Scoring Dimensions](#15-prompt-scoring-dimensions)
 
 ---
 
-## 1. Tools & Agents Setup
+## 1. Master System Prompt
 
-### Antigravity (AI Coding Assistant)
-
-**Role:** Primary AI IDE. Global settings in `~/CLAUDE.md`. Workspace in `~/Desktop/ai tools/CLAUDE.md`.
-
-Key `settings.json` optimizations applied:
-
-```json
-{
-  "editor.formatOnSave": true,
-  "editor.minimap.enabled": false,
-  "workbench.editor.limit.enabled": true,
-  "workbench.editor.limit.value": 8,
-  "git.autofetch": true,
-  "html.trace.server": "off",
-  "json.trace.server": "off",
-  "gradle.debug": false,
-  "files.exclude": {
-    "**/node_modules": true,
-    "**/.git": true,
-    "**/dist": true,
-    "**/build": true,
-    "**/.next": true
-  }
-}
-```
-
-### OpenHands (AI Coding Agent — Docker)
-
-**Role:** Headless AI agent for autonomous coding tasks.
-
-```bash
-# Run OpenHands (OrbStack required)
-docker run -d --rm --pull=always \
-  -e AGENT_SERVER_IMAGE_REPOSITORY=ghcr.io/openhands/agent-server \
-  -e AGENT_SERVER_IMAGE_TAG=1.11.4-python \
-  -v /var/run/docker.sock:/var/run/docker.sock \
-  -v ~/.openhands:/.openhands \
-  -p 3001:3000 \
-  --add-host host.docker.internal:host-gateway \
-  --name openhands-app \
-  docker.openhands.dev/openhands/openhands:1.4
-
-# Access at: http://127.0.0.1:3001
-```
-
-> ⚠️ Use `127.0.0.1` not `localhost` when using OrbStack.
-
-### Aider CLI
-
-**Role:** Command-line AI coding assistant.
-
-```bash
-brew install aider       # Install
-aider --model claude-3-5-sonnet-20241022   # Start with Claude
-aider --model gpt-4o     # Start with GPT-4o
-```
-
-### Ollama / Mistral-7B
-
-**Role:** Local AI model — runs entirely on your Mac (no API cost).
-
-```bash
-brew install ollama
-ollama pull mistral
-ollama run mistral
-```
-
-### promptc CLI
-
-**Role:** Prompt compiler, linter, and A/B tester.
-**Repo:** `github.com/marktantongco/promptc`
-
-```bash
-git clone https://github.com/marktantongco/promptc.git
-cd promptc && npm install
-npm run dev -- build --preset web-ui --goal "your goal here"
-```
-
-### MCP Servers (Antigravity Extensions)
-
-Located in `~/Library/Application Support/Antigravity/User/mcp.json`:
-
-- `context7` — Documentation context lookup
-- `github-mcp-server` — GitHub integration
-- `sequential-thinking` — Chain-of-thought reasoning
-
----
-
-## 2. Master System Prompt
-
-**Where to use:** Antigravity User Rules · ChatGPT Custom Instructions · Claude System Prompt
+**When to use:** Paste into any AI's User Rules / Custom Instructions / System Prompt field.
 
 ```text
 You are my expert AI assistant, business partner, and creative strategist.
@@ -139,28 +50,9 @@ Rules you must always follow:
 
 ---
 
-## 3. Secret Sauce Modifiers
+## 2. Advocate Mode
 
-Add these phrases anywhere in your prompts to boost output quality:
-
-| Phrase                                                | What It Does                                 |
-| ----------------------------------------------------- | -------------------------------------------- |
-| `"act as an expert in..."`                            | Forces deep, authoritative responses         |
-| `"give me the version a senior dev would write"`      | Skips beginner-level code                    |
-| `"don't explain, just do it"`                         | Removes verbose output when you want results |
-| `"think step by step before answering"`               | Triggers deeper reasoning                    |
-| `"what would you do if this was your own business?"`  | Gets honest, opinionated advice              |
-| `"what am I missing or not asking that I should be?"` | Surfaces blind spots                         |
-| `"give me the 80/20 version"`                         | Highest-impact answer, minimum complexity    |
-| `"assume I'm an expert, skip the basics"`             | Removes unnecessary context-setting          |
-| `"be brutally honest"`                                | Removes diplomatic softening                 |
-| `"rank these by impact"`                              | Forces prioritization, not just listing      |
-
----
-
-## 4. Advocate Mode Prompt
-
-**Use at the start of any important session:**
+**When to use:** Start of any important session where you want the AI to push back, protect your interests, and optimize for long-term success.
 
 ```text
 For this entire conversation, I want you to be my advocate, not just my assistant.
@@ -175,9 +67,28 @@ That means:
 
 ---
 
-## 5. Animal Thinking Modes (7 Modes)
+## 3. Secret Sauce Modifiers
 
-Trigger by name: **"Apply Owl Mode"**, **"Use Beaver Mode on this"**, etc.
+Append any of these phrases to boost output quality instantly:
+
+| Modifier                                            | What It Makes AI Do                  |
+| --------------------------------------------------- | ------------------------------------ |
+| `act as an expert in [field]`                       | Forces deep, authoritative responses |
+| `give me the version a senior dev would write`      | Skips beginner-level output          |
+| `don't explain, just do it`                         | Removes verbose preambles            |
+| `think step by step before answering`               | Triggers deeper reasoning chain      |
+| `what would you do if this was your own business?`  | Gets honest, opinionated advice      |
+| `what am I missing or not asking that I should be?` | Surfaces blind spots                 |
+| `give me the 80/20 version`                         | Highest impact, minimum complexity   |
+| `assume I'm an expert, skip the basics`             | Removes redundant context            |
+| `be brutally honest`                                | Removes diplomatic softening         |
+| `rank these by impact`                              | Forces prioritization, not listing   |
+
+---
+
+## 4. Animal Thinking Modes
+
+**Trigger by name:** _"Apply Owl Mode"_, _"Use Beaver Mode on this"_, _"Think like an Eagle"_
 
 ### 🐇 Rabbit Mode — Multiply Ideas
 
@@ -233,19 +144,18 @@ psychology, economics, science or history.
 
 ### ⚡ Power Combos
 
-| Goal                          | Combo                             |
-| ----------------------------- | --------------------------------- |
-| Build an AI content system    | 🦅 Eagle → 🦫 Beaver → 🐜 Ant     |
-| Solve a complex problem       | 🦉 Owl → 🐬 Dolphin → 🐘 Elephant |
-| Brainstorm a YouTube channel  | 🐇 Rabbit → 🦅 Eagle → 🐜 Ant     |
-| Design a WordPress workflow   | 🦫 Beaver → 🐜 Ant → 🦉 Owl       |
-| Validate a business idea      | 🦉 Owl → 🐘 Elephant → 🦅 Eagle   |
-| Generate viral content angles | 🐇 Rabbit → 🐬 Dolphin → 🦅 Eagle |
-| Automate repetitive tasks     | 🦫 Beaver → 🐜 Ant → 🐘 Elephant  |
+| Goal                           | Mode Chain                        |
+| ------------------------------ | --------------------------------- |
+| Build an AI content system     | 🦅 Eagle → 🦫 Beaver → 🐜 Ant     |
+| Solve a complex problem        | 🦉 Owl → 🐬 Dolphin → 🐘 Elephant |
+| Brainstorm a channel / product | 🐇 Rabbit → 🦅 Eagle → 🐜 Ant     |
+| Design a workflow / automation | 🦫 Beaver → 🐜 Ant → 🦉 Owl       |
+| Validate a business idea       | 🦉 Owl → 🐘 Elephant → 🦅 Eagle   |
+| Generate viral content angles  | 🐇 Rabbit → 🐬 Dolphin → 🦅 Eagle |
 
 ---
 
-## 6. Task-Specific Prompts
+## 5. Task-Specific Prompts
 
 ### 🎬 YouTube Content Creation
 
@@ -260,7 +170,7 @@ When I give you a topic, automatically:
 Topic: [your topic here]
 ```
 
-### 💻 Coding (Antigravity / Aider)
+### 💻 Coding / Engineering
 
 ```text
 You are a senior software engineer and architect.
@@ -269,7 +179,7 @@ When I describe a feature, always:
 - Write production-ready code, not demo code
 - Add error handling automatically
 - Explain the "why" behind any non-obvious decision in a single comment
-- Flag any performance or security concerns before I ask
+- Flag performance or security concerns before I ask
 ```
 
 ### 📊 Business / Strategy
@@ -291,26 +201,228 @@ You are a research assistant. When I give you content to analyze:
 - Format as: Key Insight → Why It Matters → Action I Can Take
 ```
 
+### ✍️ Skills.md Generator
+
+**Rating scale: 1-10 clarity/relevance | 4 improvements | 2 refined versions**
+
+```text
+Original prompt: "[your prompt here]"
+
+Rate 1-10 on clarity/relevance.
+Suggest 4 key improvements.
+Refined1: Apply top suggestion.
+Refined2: Apply best synergy suggestion.
+Present Refined1 and Refined2 as separate copy-paste ready boxes.
+```
+
 ---
 
-## 7. Structured Output / JSON Techniques
+## 6. Eight-Layer Prompt Architecture
 
-**For WordPress/PHP site generation from business descriptions.**
+**The universal structure. Use all 8 layers for production-quality outputs.**
 
-### Global JSON Rules (Always Append)
+```
+ROLE → CONTEXT → OBJECTIVE → CONSTRAINTS → AESTHETIC → PLANNING → OUTPUT → REFINEMENT
+```
+
+| Layer           | Purpose                     | Missing It Causes                |
+| --------------- | --------------------------- | -------------------------------- |
+| **ROLE**        | Who the AI acts as          | Generic, shallow responses       |
+| **CONTEXT**     | Product, audience, platform | Misaligned output                |
+| **OBJECTIVE**   | What success looks like     | Aimless generation               |
+| **CONSTRAINTS** | Quality guardrails          | Mediocre, unconstrained output   |
+| **AESTHETIC**   | Design language / tone      | Visually dull or off-brand       |
+| **PLANNING**    | Reason before generating    | Structural mistakes              |
+| **OUTPUT**      | Exact format to deliver     | Incomplete or disorganized files |
+| **REFINEMENT**  | Self-critique before final  | First-draft quality only         |
+
+### Full Template
+
+```text
+ROLE
+You are a [expert role].
+
+CONTEXT
+Product: [name or description]
+Platform: [mobile / web / hybrid]
+Audience: [who uses this]
+
+OBJECTIVE
+[One clear sentence of what success looks like]
+Success criteria:
+- [criterion 1]
+- [criterion 2]
+
+CONSTRAINTS
+- [constraint 1]
+- [constraint 2]
+- [accessibility standard]
+- [performance target]
+
+AESTHETIC
+- [visual style keyword 1]
+- [visual style keyword 2]
+- [tone descriptor]
+
+PLANNING (complete this before generating)
+1. Define information architecture
+2. Define navigation model
+3. Define layout and grid
+4. Define interaction and motion logic
+5. Validate accessibility and performance plan
+
+OUTPUT FORMAT
+Generate:
+1. [file or artifact type]
+2. [second deliverable]
+3. [instructions or explanation]
+
+REFINEMENT
+After generating the first draft:
+- Critique for clarity and completeness
+- Refine once for structure
+- Refine once for polish
+- Output final result only
+```
+
+---
+
+## 7. Meta Prompting Framework
+
+**Purpose:** Makes AI analyze and restructure any vague concept into a structured brief before generating.
+
+### Universal Meta Prompt Template
+
+```text
+You are a [senior role].
+
+Step 1: Analyze and rewrite the concept into a structured brief including:
+- Target audience and their goals
+- UX objectives
+- Platform constraints
+- Aesthetic system
+- Interaction model
+
+Step 2: Plan the architecture:
+- Navigation model
+- Layout grid
+- Motion and animation system
+- Accessibility plan
+
+Step 3: Generate the final output in [tool or framework].
+
+Concept: [your idea]
+```
+
+### Mobile Meta Prompt
+
+```text
+Plan mobile-first architecture:
+- Bottom navigation with gesture support
+- 44px minimum touch targets
+- Swipe gesture patterns
+- Haptic feedback cues
+- Safe-area insets handled
+- Dark mode as default
+Then generate [React Native / Expo] components with full source code.
+```
+
+### Web Meta Prompt
+
+```text
+Plan web architecture:
+- 8pt baseline grid
+- Responsive breakpoints: 375px, 768px, 1280px, 1920px
+- Navigation: [top nav / sidebar / hybrid]
+- Scroll-trigger animations via Framer Motion
+- Semantic HTML structure
+- SEO meta tags included
+Then generate Next.js + Tailwind components with full source code.
+```
+
+### Mobile vs Web Differences
+
+| Aspect       | Mobile                        | Web                           |
+| ------------ | ----------------------------- | ----------------------------- |
+| Navigation   | Gesture-dominant, bottom tabs | Hover/click, sidebar, top nav |
+| Touch        | 44px targets minimum          | Not applicable                |
+| Interactions | Pinch, swipe, long-press      | Hover states, parallax scroll |
+| Constraints  | Battery, safe-areas, offline  | SEO, Lighthouse score         |
+| Stack        | React Native / Expo           | Next.js + Tailwind            |
+| Animation    | Subtle, haptics-aware         | Framer Motion, scroll-trigger |
+
+---
+
+## 8. Enhancement Protocols
+
+### Self-Refinement Loop
+
+```text
+Generate draft →
+Critique on: sophistication, uniqueness, performance, platform alignment →
+Refine once for structure →
+Refine once for polish and consistency →
+Output final result only.
+```
+
+> Two refinement iterations max. Three absolute maximum. Never re-generate from scratch.
+
+### Chain-of-Thought (CoT)
+
+Append to any complex prompt:
+
+```text
+Let's think step by step.
+```
+
+Best for: multi-step flows, system design, checkout flows, onboarding journeys.
+
+### Self-Consistency (Creativity Validation)
+
+```text
+Generate [6-12] layout/approach variants.
+Identify the strongest structural patterns across all variants.
+Merge the best attributes into one final output.
+```
+
+Prevents average-output drift when you need genuinely creative results.
+
+### Tweak Protocol (Systematic Iteration)
+
+```text
+Refine [specific element] with [specific change].
+Lock aesthetic. Preserve hierarchy. Maintain code quality.
+Do not change anything else.
+```
+
+Change one variable at a time. Precision beats full regeneration every time.
+
+### Prompt Diff (Version Comparison)
+
+```text
+Compare Prompt A and Prompt B.
+For each, score on: clarity, constraints, predictability, output specificity.
+Explain what changed between versions and why one performs better.
+```
+
+---
+
+## 9. Structured Output / JSON Techniques
+
+**Global JSON Rule (always append when requesting JSON):**
 
 ```text
 Respond EXCLUSIVELY with valid JSON — no explanations, no markdown fences, no extra text.
 Use double quotes only. No trailing commas. No comments inside JSON.
-Unknown values use "TBD". Output must pass PHP json_decode() without errors.
+Unknown values use "TBD". Output must pass JSON.parse() without errors.
 ```
 
 ### Technique 1 — Role + Strict Schema (Zero-Shot Baseline)
 
 ```text
-You are an expert WordPress site architect specializing in fast, SEO-optimized small business sites.
-Your only job is to analyze the business description and respond EXCLUSIVELY with valid JSON.
-No explanations, no markdown, no extra text. Use this exact schema:
+You are an expert WordPress site architect.
+Analyze the business description and respond EXCLUSIVELY with valid JSON.
+Use this exact schema:
 {
   "sitemap": [ { "page_slug": "", "page_title": "", "description": "" } ],
   "pages": {
@@ -322,18 +434,19 @@ No explanations, no markdown, no extra text. Use this exact schema:
   "global": { "site_title": "", "tagline": "", "color_palette": "" },
   "image_prompts": [ "descriptive string for image generation" ]
 }
+Business description: [input]
 ```
 
-### Technique 2 — Few-Shot (Best for Local Models / Ollama)
+### Technique 2 — Few-Shot Examples (Best for Local Models)
 
 ```text
 Example 1:
 Input: "A freelance photographer portfolio site"
-Output: { ...full valid JSON... }
+Output: { ...valid JSON... }
 
 Example 2:
 Input: "Local gym with classes and membership info"
-Output: { ...full valid JSON... }
+Output: { ...valid JSON... }
 
 Now process:
 Input: "[real business description]"
@@ -343,33 +456,39 @@ Output:
 ### Technique 3 — Chain-of-Thought + Structured Output
 
 ```text
-First, think step by step (internally):
+First, think step by step internally:
 1. Identify core business type and goals.
 2. List essential pages.
-3. For each page, brainstorm 3-5 sections.
-4. Suggest SEO-friendly titles and meta descriptions.
+3. For each page, identify 3-5 sections.
+4. Draft SEO-friendly titles and meta descriptions.
 Then output ONLY the JSON. Do not include your reasoning in the output.
 ```
 
-### Technique 4 — Validation Guardrails (Always Append)
+### Technique 4 — Validation Guardrails
 
 ```text
-Ensure all JSON is valid and parsable. Use double quotes only. No trailing commas.
-No JavaScript comments. If a value is unknown, use "TBD" as a placeholder string.
-The output must pass PHP json_decode() without errors.
+After generating the JSON:
+- Verify all keys match the schema exactly
+- Check for trailing commas and fix them
+- Confirm all strings use double quotes
+- Replace any undefined values with "TBD"
+- Ensure the result passes JSON.parse() without errors
 ```
 
-### Recommended Combo (80/20)
+### Which Technique to Use
 
-- **First attempt:** Technique 1 + Technique 4
-- **If inconsistent (Ollama):** Add Technique 2 (few-shot examples)
-- **If structure wrong:** Add Technique 3 (chain-of-thought)
+| Situation                                    | Technique                 |
+| -------------------------------------------- | ------------------------- |
+| First attempt, any capable model             | Technique 1 + Technique 4 |
+| Getting inconsistent output (Ollama / local) | Add Technique 2           |
+| Structure keeps being wrong                  | Add Technique 3           |
+| All else fails                               | Combine all four          |
 
 ---
 
-## 8. Web App Prompt Framework
+## 10. Web App Prompt Framework
 
-### 🦫 Beaver Mode — Master System Prompt
+### Master System Prompt (Beaver Mode)
 
 ```text
 You are a senior full-stack developer and product designer.
@@ -410,6 +529,7 @@ CONSTRAINTS
 - Mobile-first always
 - WCAG AA accessibility minimum
 - 60fps animation budget
+- No placeholder lorem ipsum content
 - Avoid SaaS clichés
 
 AESTHETIC LOCK
@@ -418,383 +538,240 @@ dark-mode native | neon-accent sparse | typography-first | hierarchy clear
 
 ### 10 Prompt Variations By Audience
 
-| #   | Audience        | Core Instruction                                                                        |
-| --- | --------------- | --------------------------------------------------------------------------------------- |
-| 1   | Developer       | `Act as senior full-stack dev. Stack: Next.js + Tailwind + Framer Motion`               |
-| 2   | Designer        | `Act as product designer. Include glassmorphism, bold typography, animated transitions` |
-| 3   | Startup Founder | `Startup-ready interface: landing, dashboard, interactive modules`                      |
-| 4   | Infographic     | `Page behaves like a dynamic infographic. Scroll-based animations.`                     |
-| 5   | Gen-Z UI        | `Neon gradients, animated typography, card-based UI, dark-mode native`                  |
-| 6   | AI Product      | `Stack: Next.js + Tailwind + GSAP. Include deploy instructions.`                        |
-| 7   | No-Code         | `Low-code implementable. Mobile-first, component descriptions + interaction specs.`     |
-| 8   | Education       | `Teach through visual interaction. Expandable cards, progress indicators.`              |
-| 9   | Portfolio       | `Hero, work grid, about, contact — all animated. Minimal, smooth transitions.`          |
-| 10  | Experimental    | `UI elements move and respond dynamically. Scroll triggers all interactions.`           |
+```text
+1. DEVELOPER
+Act as a senior full-stack developer.
+Generate a mobile-first interactive web app.
+Stack: Next.js + Tailwind + Framer Motion.
+Style: Gen-Z design, animated components, responsive grid.
+Output: full project structure and source code.
 
-### Design Vocabulary Reference
+2. PRODUCT DESIGNER
+Act as a digital product designer.
+Design an ultra-modern interactive web app.
+Include: bold typography, glassmorphism, animated transitions.
+Output: component breakdown and design rationale.
 
-| Term                 | What It Tells AI                                |
-| -------------------- | ----------------------------------------------- |
-| `glassmorphism`      | Frosted glass panels with blur and transparency |
-| `brutalist UI`       | Raw, oversized, high-contrast edges             |
-| `kinetic typography` | Text that animates or reacts to scroll          |
-| `bento grid`         | Mosaic card layout (Apple-style)                |
-| `micro-interactions` | Tiny animations on hover, click, scroll         |
-| `neon accent`        | Single bright color pop on dark background      |
-| `liquid gradient`    | Smooth animated background color blends         |
-| `neumorphism`        | Soft 3D shadows on matching backgrounds         |
+3. STARTUP FOUNDER
+Create a startup-ready interactive web app interface.
+Feel: premium, modern, mobile-first.
+Include: landing page, dashboard, interactive modules.
+
+4. INTERACTIVE INFOGRAPHIC
+Create an interactive infographic web app.
+The page behaves like a dynamic infographic.
+Include: animated sections, scroll interactions, modern typography.
+
+5. GEN-Z UI
+Create an ultra-modern Gen-Z interactive web app.
+Features: neon gradients, animated typography, card-based UI.
+Dark-mode native.
+
+6. AI PRODUCT BUILDER
+You are an AI product engineer.
+Generate a complete interactive web app with responsive UI and animated components.
+Stack: Next.js + Tailwind + GSAP.
+Provide full code and deploy instructions.
+
+7. NO-CODE FRIENDLY
+Design an interactive web app concept implementable in low-code tools.
+Mobile-first, visually sophisticated, accessible.
+Include component descriptions and interaction specs.
+
+8. EDUCATIONAL DEMO
+Create a demo interactive web app that teaches users through visual interaction.
+Use: animations, expandable cards, responsive design, progress indicators.
+
+9. PORTFOLIO
+Create an interactive portfolio web app.
+Design: ultra-modern, minimal, smooth transitions.
+Include: hero, work grid, about, contact — all animated.
+
+10. EXPERIMENTAL CREATIVE
+Design an experimental interactive web app where elements move and respond dynamically.
+Bold Gen-Z aesthetics. Scroll triggers all major interactions. Dark mode default.
+```
+
+### The Three Layers Rule
+
+```
+FUNCTION   →  What does the app DO?
+DESIGN     →  What does it LOOK and FEEL like?
+TECHNOLOGY →  What STACK runs it?
+```
+
+Missing one layer collapses the output.
+
+### Dolphin Mode — 10 Creative UI Concepts
+
+```text
+1. Scroll as Navigation — sections animate like chapters in a story
+2. Skill Map Interface — interactive node graph like skills.sh
+3. AI-assisted UI — user types and interface rearranges itself
+4. Card-based micro-apps — each card opens a mini tool
+5. Data-driven storytelling — charts animate on scroll
+6. Gesture-first mobile — swipe navigation instead of menus
+7. AI search panel — natural language search filters content
+8. Live theme switcher — user toggles neon / minimal / glass
+9. Canvas mode — user manipulates elements visually
+10. Interactive infographic — the site is a moving infographic
+```
 
 ---
 
-## 9. Meta Prompting — Mobile vs Web
+## 11. powerUP Brand System Prompt
 
-### Universal Meta Prompt Template
-
-```text
-You are a [senior role].
-
-Step 1: Analyze and rewrite the concept into a structured brief including:
-- Audience, UX goals, platform constraints, aesthetic system, interaction model
-
-Step 2: Plan architecture:
-- Navigation, layout grid, motion system, accessibility
-
-Step 3: Generate the final output in [tool/framework].
-
-Concept: [idea]
-```
-
-### Mobile vs Web Key Differences
-
-| Aspect            | Mobile                        | Web                            |
-| ----------------- | ----------------------------- | ------------------------------ |
-| **Navigation**    | Gesture-dominant, bottom tabs | Hover/click, sidebars, top nav |
-| **Touch targets** | 44px minimum                  | Not applicable                 |
-| **Interactions**  | Pinch, swipe, long-press      | Hover states, parallax         |
-| **Constraints**   | Battery, safe-areas, offline  | SEO, breakpoints, Lighthouse   |
-| **Stack**         | React Native / Expo           | Next.js + Tailwind             |
-| **Animation**     | Subtle, haptics-aware         | Framer Motion, scroll-trigger  |
-
-### Mobile Meta Example
-
-```text
-Plan mobile-first architecture:
-- Bottom navigation
-- Swipe gestures
-- 44px touch targets
-- Haptic feedback cues
-- Dark mode native
-Then generate React Native components.
-```
-
-### Web Meta Example
-
-```text
-Plan web architecture:
-- 8pt baseline grid
-- Sidebar navigation
-- Scroll-trigger animations (Framer Motion)
-- Semantic HTML structure
-Then generate Next.js + Tailwind components.
-```
-
----
-
-## 10. Enhancement Protocols
-
-### Self-Refinement Loop
-
-```text
-Generate draft →
-Critique on: sophistication, uniqueness, performance, platform alignment →
-Refine once for structure →
-Refine once for polish →
-Output final result only.
-```
-
-Two iterations max, three absolute maximum.
-
-### Chain-of-Thought (CoT)
-
-Append to any complex prompt:
-
-```text
-Let's think step by step.
-```
-
-Best for: multi-step flows, checkout systems, onboarding journeys.
-
-### Self-Consistency (Creativity Validation)
-
-Generate 6–12 layout variants, select strongest patterns, merge best attributes.
-Prevents average-output drift.
-
-### Tweak Protocol (Systematic Iteration)
-
-```text
-Refine [specific element] with [specific change].
-Lock aesthetic. Preserve hierarchy. Maintain code quality.
-```
-
-Change one variable at a time. Precision beats regeneration.
-
----
-
-## 11. promptc CLI Reference
-
-**Repo:** `github.com/marktantongco/promptc`
-**Topics:** `prompt-engineering`, `ai`, `cli`, `llm`, `nextjs`, `powerup`, `typescript`, `prompt-compiler`
-
-### All Commands
-
-```bash
-# BUILD — generate a structured prompt
-npm run dev -- build --role "designer" --product "my app" --platform web --goal "goal"
-npm run dev -- build --preset web-ui --goal "AI skill explorer"
-npm run dev -- build --preset mobile-ui --goal "expense tracker"
-npm run dev -- build --preset ai-docs --goal "API documentation"
-npm run dev -- build --preset web-ui --goal "app" --output my-prompt.md
-
-# LINT — check and fix prompt quality
-npm run dev -- lint examples/compiled-prompts/prompt.md
-npm run dev -- lint examples/compiled-prompts/prompt.md --fix
-
-# TEST — A/B score prompt structures
-npm run dev -- test
-npm run dev -- test --llm   # LLM-based scoring (requires API key)
-```
-
-### Presets Available
-
-| Preset      | Role               | Platform | Tool                |
-| ----------- | ------------------ | -------- | ------------------- |
-| `web-ui`    | Frontend architect | Web      | Next.js + Tailwind  |
-| `mobile-ui` | Mobile designer    | Mobile   | React Native / Expo |
-| `ai-docs`   | Technical writer   | Web      | Markdown / MDX      |
-
-### Lint Rules (6 Rules)
-
-| ID                      | Rule                          | Autofix? |
-| ----------------------- | ----------------------------- | -------- |
-| `missing-role`          | Must define ROLE              | ✅ Yes   |
-| `missing-constraints`   | Must define CONSTRAINTS       | ✅ Yes   |
-| `missing-objective`     | Must define OBJECTIVE or GOAL | ❌ No    |
-| `vague-language`        | No: nice, cool, awesome       | ✅ Yes   |
-| `missing-output-format` | Should define OUTPUT          | ❌ No    |
-| `missing-planning`      | Should define PLANNING        | ❌ No    |
-
-### 8-Layer Prompt Architecture (Always Follow This Order)
-
-```
-ROLE → CONTEXT → OBJECTIVE → CONSTRAINTS → AESTHETIC → PLANNING → OUTPUT → REFINEMENT
-```
-
-### Versioning Standard
-
-```text
-<!-- promptc-version: 1.0.0 | preset: web-ui | compiled-at: 2026-03-10 -->
-```
-
-Semver: `MAJOR.MINOR.PATCH`
-
-- MAJOR = structural change (new required sections)
-- MINOR = improved constraints, clarity
-- PATCH = wording tweaks, autofix improvements
-
----
-
-## 12. powerUP Brand System
-
-### Color Tokens
-
-```typescript
-export const powerUP = {
-  color: {
-    base: {
-      void: "#0B0D10", // near-black background
-      charcoal: "#14161A", // secondary surface
-    },
-    energy: {
-      cyan: "#4DFFFF", // primary accent
-      magenta: "#FF4FD8", // secondary accent
-      violet: "#7B5CFF", // tertiary accent
-      amber: "#FFB000", // warm accent
-    },
-    text: {
-      primary: "#FFFFFF",
-      secondary: "#A1A1AA",
-      muted: "#6B7280",
-    },
-  },
-  motion: {
-    duration: { micro: 180, standard: 320, hero: 4200 },
-    easing: { lift: "cubic-bezier(0.16, 1, 0.3, 1)" },
-    bias: "upward",
-  },
-};
-```
-
-### Tailwind Config
-
-```typescript
-// tailwind.config.ts
-theme: {
-  extend: {
-    colors: {
-      base: { void: "#0B0D10", charcoal: "#14161A" },
-      energy: { cyan: "#4DFFFF", violet: "#7B5CFF", magenta: "#FF4FD8", amber: "#FFB000" },
-      text: { primary: "#FFFFFF", secondary: "#A1A1AA", muted: "#6B7280" },
-    },
-    fontFamily: {
-      display: ["Inter", "Space Grotesk", "system-ui"],
-      body: ["Inter", "system-ui"],
-      mono: ["JetBrains Mono", "ui-monospace"],
-    },
-    fontSize: {
-      hero: ["clamp(3rem, 6vw, 6rem)", { lineHeight: "1.05" }],
-    },
-    transitionTimingFunction: {
-      lift: "cubic-bezier(0.16, 1, 0.3, 1)",
-    },
-  }
-}
-```
-
-### Visual Rules (Non-Negotiable)
-
-- ❌ No gradients unless motion-driven
-- ❌ No icons unless semantic
-- ❌ No "cards for everything"
-- ✅ White space = intelligence
-- ✅ Typography does the work
-- ✅ One accent color per screen
-- ✅ Motion always resolves upward
-
-### Brand System Prompt (AI Lock)
+**Apply whenever generating UI/UX within the powerUP brand.**
 
 ```text
 You are designing within the powerUP brand system.
 
 Brand essence: Activated potential. Directed energy. Intelligent lift.
 
+Color palette:
+- Background: #0B0D10 (void black), #14161A (charcoal)
+- Accents (use sparingly): cyan #4DFFFF, violet #7B5CFF, magenta #FF4FD8, amber #FFB000
+- Text: #FFFFFF (primary), #A1A1AA (secondary), #6B7280 (muted)
+
+Typography:
+- Display: Inter, Space Grotesk
+- Body: Inter
+- Mono: JetBrains Mono
+- Hero size: clamp(3rem, 6vw, 6rem)
+
+Motion:
+- Bias: always upward
+- Easing: cubic-bezier(0.16, 1, 0.3, 1)
+- Duration: micro 180ms, standard 320ms, hero 4200ms
+
 Design rules:
-- Typography-first
+- Typography-first — type does the work, effects support
 - Dark-mode native
-- Minimal neon accents
-- Strong hierarchy
-- Upward visual bias
+- One accent color per screen maximum
+- White space = intelligence, never fill it
+- No gradients unless motion-driven
+- No icons unless semantically necessary
 
 Tone: Confident, modern, calm, inevitable.
 
-Avoid: Over-decoration, excessive gradients, visual noise, trend-chasing.
+Avoid: over-decoration, excessive gradients, visual noise, trend-chasing, SaaS clichés.
 
-Goal: Create outputs that feel like the natural interface of progress.
+Output: Create designs that feel like the natural interface of progress.
 ```
 
 ---
 
-## 13. Prompt Quality Checklist
+## 12. Design Vocabulary Reference
 
-Run through this before using any AI prompt:
+Use these exact words in any UI/UX prompt to steer visual output precisely:
+
+| Term                     | What It Tells AI to Generate                         |
+| ------------------------ | ---------------------------------------------------- |
+| `glassmorphism`          | Frosted glass panels — translucent, blurred backdrop |
+| `brutalist UI`           | Raw, oversized, high-contrast, intentionally rough   |
+| `neumorphism`            | Soft 3D shadows on matching-color backgrounds        |
+| `kinetic typography`     | Text that animates, morphs, or reacts to scroll      |
+| `bento grid`             | Mosaic card layout — Apple-style asymmetric grid     |
+| `micro-interactions`     | Tiny animations on hover, click, scroll, focus       |
+| `scroll-jacking`         | Custom scroll speed and animation control            |
+| `neon accent`            | Single bright color pop against a dark background    |
+| `liquid gradient`        | Smooth, animated, shifting background color blends   |
+| `frosted overlay`        | Semi-transparent blur layer over content             |
+| `dark-mode native`       | Designed for dark backgrounds first, light second    |
+| `editorial layout`       | Magazine-style, large typography, asymmetric grid    |
+| `skeleton loading`       | Placeholder shimmer before real content appears      |
+| `progressive disclosure` | Reveal complexity only when user needs it            |
+| `ambient motion`         | Subtle, looping background animation                 |
+
+---
+
+## 13. Prompt Lint Rules
+
+**6 rules an AI should enforce on any prompt before generating:**
+
+| Rule ID                 | Check                                            | Autofix?                         |
+| ----------------------- | ------------------------------------------------ | -------------------------------- |
+| `missing-role`          | Does the prompt define who the AI should act as? | ✅ Add default role              |
+| `missing-constraints`   | Does the prompt define explicit limits?          | ✅ Add mobile-first, WCAG, 60fps |
+| `missing-objective`     | Does the prompt state a clear success condition? | ❌ Must be user-defined          |
+| `vague-language`        | Does it use: nice, cool, awesome?                | ✅ Replace with specific terms   |
+| `missing-output-format` | Does it specify what files/format to generate?   | ❌ Must be user-defined          |
+| `missing-planning`      | For UI prompts, is there a planning phase?       | ❌ Must be user-defined          |
+
+**Vague words to always flag and replace:**
+
+| Avoid         | Replace With                                  |
+| ------------- | --------------------------------------------- |
+| `nice`        | `clear and intentional`                       |
+| `cool`        | `high-contrast and dynamic`                   |
+| `modern`      | `[specific aesthetic keyword]`                |
+| `awesome`     | `visually striking and purposeful`            |
+| `good design` | `typographically strong with clear hierarchy` |
+
+---
+
+## 14. Prompt Quality Checklist
 
 ```
 STRUCTURE
   [ ] Role defined — who is the AI acting as?
-  [ ] Goal clear — one sentence max
+  [ ] Goal clear — one sentence maximum
   [ ] Objective and success criteria stated
-  [ ] Constraints listed explicitly
+  [ ] Constraints listed explicitly (not implied)
 
 DESIGN (for UI/UX prompts)
   [ ] Platform specified — mobile or web or hybrid
-  [ ] 3+ aesthetic keywords included
-  [ ] Animation library named — Framer Motion or GSAP
+  [ ] 3+ aesthetic keywords included from the vocabulary list
+  [ ] Animation library named — Framer Motion or GSAP or None
   [ ] Mobile-first stated explicitly
 
 TECHNICAL
   [ ] Stack specified — framework + styling + animation
-  [ ] Output format requested — folder + code + instructions
-  [ ] Accessibility requirement stated — WCAG AA minimum
-  [ ] Performance budget stated — 60fps
+  [ ] Output format requested — folder + files + instructions
+  [ ] Accessibility: WCAG AA minimum stated
+  [ ] Performance: 60fps animation budget stated
 
 QUALITY
-  [ ] No vague words — nice, cool, awesome, modern
+  [ ] No vague words — nice, cool, awesome, modern, good
   [ ] Refinement instruction included
-  [ ] At least one interaction metaphor defined (web app prompts)
-  [ ] JSON rules appended — if requesting JSON output
+  [ ] At least one interaction metaphor defined
+  [ ] JSON rules appended if requesting structured data output
 
-ANIMAL MODE (optional but powerful)
-  [ ] Pick one: Beaver / Dolphin / Eagle / Ant / Owl / Rabbit / Elephant
-  [ ] Or chain: Eagle → Beaver → Ant for complex projects
+ANIMAL MODE (optional power-up)
+  [ ] Mode selected: Beaver / Dolphin / Eagle / Ant / Owl / Rabbit / Elephant
+  [ ] Or chained for complex goals: Eagle → Beaver → Ant
 ```
 
 ---
 
-## 14. Skills Installed
+## 15. Prompt Scoring Dimensions
 
-All located in `~/.agents/skills/`:
+**Use to evaluate and compare any two prompt variants (A/B testing):**
 
-| Skill Folder                         | Triggers On                                                                                                                                | Key Content                                                       |
-| ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------- |
-| `animal-thinking-modes`              | `owl mode`, `beaver mode`, `rabbit mode`, `eagle mode`, `dolphin mode`, `ant mode`, `elephant mode`                                        | 7 animal prompts + power combos                                   |
-| `ai-power-prompts`                   | `power prompts`, `master prompt`, `system prompt`, `secret sauce`, `advocate mode`, `youtube prompt`, `coding prompt`                      | Master prompt, task prompts, secret sauce, advocate mode          |
-| `promptc-os`                         | `promptc`, `meta prompt`, `prompt compiler`, `prompt lint`, `ui ux prompt`, `mobile prompt`, `web prompt`                                  | Full prompt OS: 8-layer stack, presets, CLI, registry, governance |
-| `aiskills-photog` (ai-creator-suite) | `web app prompt`, `gen-z design`, `mobile responsive app`, `framer motion`, `gsap animation`, `glassmorphism`, `card ui`, `prompt factory` | Web app master prompt, 10 variations, design vocabulary           |
+| Dimension          | What It Measures                                    | Max Score |
+| ------------------ | --------------------------------------------------- | --------- |
+| **Clarity**        | Is the goal unambiguous? No vague language?         | 10        |
+| **Structure**      | Does it follow ROLE → CONTEXT → OBJECTIVE → OUTPUT? | 10        |
+| **Constraints**    | Mobile-first? Accessibility? Performance?           | 10        |
+| **Predictability** | Does it specify output format and refinement?       | 10        |
+| **Overall**        | Average of all four dimensions                      | 10        |
 
-### How Skills Work
+### Scoring Formula
 
-Antigravity scans `~/.agents/skills/` at startup. When you type a trigger phrase in any
-conversation, the skill auto-loads and applies its instructions — no copy-pasting required.
+```
+Overall = (Clarity + Structure + Constraints + Predictability) / 4
+```
+
+### What Each Score Means
+
+| Score | Quality Level         | Action                              |
+| ----- | --------------------- | ----------------------------------- |
+| 9–10  | Production ready      | Ship it                             |
+| 7–8   | Good, minor gaps      | Add missing constraints             |
+| 5–6   | Partial structure     | Add role + output format            |
+| 3–4   | Weak, vague           | Rebuild using 8-layer template      |
+| 1–2   | Single vague sentence | Start over with the master template |
 
 ---
 
-## 15. GitHub Deployment Guide
-
-### Your Repo
-
-```
-https://github.com/marktantongco/promptc
-Topics: prompt-engineering · ai · cli · llm · nextjs · powerup · typescript · prompt-compiler
-```
-
-### Auth (Already Configured)
-
-```bash
-gh auth status        # Verify: logged in as marktantongco
-gh auth login         # Re-authenticate if token expires
-```
-
-### Push Changes
-
-```bash
-cd "/Users/howe/Desktop/ai tools/promptc"
-git add .
-git commit -m "feat: describe your change"
-git push
-```
-
-### Create a New Repo
-
-```bash
-gh repo create my-project --public --description "description" --source . --remote origin --push
-```
-
-### Add Topics
-
-```bash
-gh repo edit marktantongco/promptc --add-topic "new-topic"
-```
-
-### GitHub Actions CI (Running)
-
-Every PR automatically runs `promptc lint` via `.github/workflows/promptc-lint.yml`.
-PRs fail if prompts violate quality rules — quality is enforced, not optional.
-
----
-
-## ⚡ Everything in One Sentence
-
-> Your AI stack: **Antigravity** (IDE) + **OpenHands** (autonomous agent) + **Aider** (CLI coding) + **Ollama** (local model) + **promptc** (prompt compiler) — governed by the **8-layer prompt architecture**, activated by **7 animal thinking modes**, deployed via **GitHub** with CI enforcement.
-
----
-
-_Last updated: 2026-03-10 | Thread: bbb8e92b | Repo: marktantongco/promptc_
+_promptc OS · powerUP · github.com/marktantongco/promptc_
