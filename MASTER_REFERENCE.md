@@ -1,8 +1,37 @@
-# 🧠 AI PROMPT REFERENCE
+# AI Prompt Engineering Reference — Skills, Frameworks, Techniques & Modes for LLMs
 
-### Skills · Frameworks · Techniques · Modes · Secret Sauce
+> **The complete reusable prompt library for AI practitioners.**
+> Covers prompt architecture, thinking modes, enhancement protocols, structured output, web app generation, brand systems, and quality scoring — designed to be consumed directly by AI agents as a skill reference.
 
-_Everything an AI can reuse, apply, and be guided by._
+[![promptc](https://img.shields.io/badge/promptc-OS-blueviolet)](https://github.com/marktantongco/promptc)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+[![GitHub Stars](https://img.shields.io/github/stars/marktantongco/promptc)](https://github.com/marktantongco/promptc/stargazers)
+
+---
+
+<!-- SEO: prompt engineering, AI prompts, LLM prompts, ChatGPT prompts, Claude prompts,
+     Antigravity prompts, prompt frameworks, prompt techniques, chain of thought,
+     self refinement, animal thinking modes, meta prompting, structured output, JSON prompts,
+     web app AI prompts, Next.js AI generation, Gen-Z UI prompts, powerUP brand, promptc CLI -->
+
+## What This Is
+
+A **single-file prompt reference** for AI systems and practitioners. Every section is a
+reusable skill: copy a prompt block, apply a mode, or chain techniques to get production-quality
+AI output — every time.
+
+**Who this is for:**
+
+- 🤖 AI agents reading this as a skill or context file
+- 👩‍💻 Developers building prompt-driven applications
+- 🎨 Designers using AI for UI/UX generation
+- 📈 Strategists using AI for business planning
+
+**How to use:**
+
+- Feed this file directly to your AI as a system prompt or attached document
+- Reference sections by number: _"Apply Section 4 — Eagle Mode to my idea"_
+- Chain techniques: _"Use the 8-Layer Architecture (Section 6) with the Web App Framework (Section 10)"_
 
 ---
 
@@ -13,7 +42,7 @@ _Everything an AI can reuse, apply, and be guided by._
 3. [Secret Sauce Modifiers](#3-secret-sauce-modifiers)
 4. [Animal Thinking Modes](#4-animal-thinking-modes)
 5. [Task-Specific Prompts](#5-task-specific-prompts)
-6. [8-Layer Prompt Architecture](#6-8-layer-prompt-architecture)
+6. [8-Layer Prompt Architecture](#6-eight-layer-prompt-architecture)
 7. [Meta Prompting Framework](#7-meta-prompting-framework)
 8. [Enhancement Protocols](#8-enhancement-protocols)
 9. [Structured Output / JSON Techniques](#9-structured-output--json-techniques)
@@ -221,7 +250,7 @@ Present Refined1 and Refined2 as separate copy-paste ready boxes.
 
 **The universal structure. Use all 8 layers for production-quality outputs.**
 
-```
+```text
 ROLE → CONTEXT → OBJECTIVE → CONSTRAINTS → AESTHETIC → PLANNING → OUTPUT → REFINEMENT
 ```
 
@@ -594,7 +623,7 @@ Bold Gen-Z aesthetics. Scroll triggers all major interactions. Dark mode default
 
 ### The Three Layers Rule
 
-```
+```text
 FUNCTION   →  What does the app DO?
 DESIGN     →  What does it LOOK and FEEL like?
 TECHNOLOGY →  What STACK runs it?
@@ -758,7 +787,7 @@ ANIMAL MODE (optional power-up)
 
 ### Scoring Formula
 
-```
+```text
 Overall = (Clarity + Structure + Constraints + Predictability) / 4
 ```
 
