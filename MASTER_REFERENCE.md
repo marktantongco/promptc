@@ -33,6 +33,7 @@
 15. [Prompt Lint Rules](#15-prompt-lint-rules)
 16. [Quality Checklist](#16-prompt-quality-checklist)
 17. [Scoring Dimensions](#17-prompt-scoring-dimensions)
+18. [Common Workflows](#18-common-workflows)
 
 ---
 
@@ -832,6 +833,681 @@ Overall = (Clarity + Structure + Constraints + Predictability) / 4
 | 5–6 | Partial structure | Add role + output format |
 | 3–4 | Weak, vague | Rebuild using 8-layer template |
 | 1–2 | Single vague sentence | Start over with master template |
+
+---
+
+## 18. Common Workflows
+
+Complete step-by-step workflows for common use-cases. Each workflow shows the exact flow from beginning to final output.
+
+### 🎨 Design & UI/UX Workflows
+
+#### Workflow 1: Design System Creation
+
+**Purpose:** Build a complete design system from scratch
+
+**Flow:**
+```
+Step 1 (Eagle): Define long-term design vision
+- Brand positioning and personality
+- Target audience demographics
+- Competitive landscape analysis
+- Design principles (3-5 core values)
+
+Step 2 (Beaver): Build foundational components
+- Color palette (primary, secondary, accent, semantic)
+- Typography scale (display, heading, body, caption)
+- Spacing system (4px baseline grid)
+- Border radius and shadow scales
+
+Step 3 (Ant): Create component library
+- Buttons (primary, secondary, ghost, icon)
+- Form elements (input, select, checkbox, radio)
+- Cards and containers
+- Navigation patterns
+
+Step 4 (Owl): Validate consistency
+- Check all components follow the system
+- Verify accessibility contrast ratios
+- Test responsive behavior
+
+Final Output: Complete design system documentation
+```
+
+---
+
+#### Workflow 2: Landing Page Design
+
+**Purpose:** Create high-conversion landing page
+
+**Flow:**
+```
+Step 1 (Rabbit): Generate 10+ headline variations
+- Problem-aware headlines
+- Solution-focused headlines
+- Benefit-driven headlines
+- Social proof headlines
+
+Step 2 (Eagle): Structure the page architecture
+- Hero section with CTA
+- Problem/Agitation section
+- Solution/features section
+- Social proof section
+- Pricing/CTA section
+
+Step 3 (Beaver): Design each section
+- Hero: Hook + visual + CTA
+- Features: 3-column bento grid
+- Testimonials: Carousel or grid
+- CTA: Contrast section
+
+Step 4 (Ant): Optimize for conversion
+- Button placement and sizing
+- Form field minimization
+- Loading states
+- Mobile touch targets
+
+Final Output: Complete landing page design with all sections
+```
+
+---
+
+#### Workflow 3: Dashboard Design
+
+**Purpose:** Build data visualization dashboard
+
+**Flow:**
+```
+Step 1 (Eagle): Define data requirements
+- Key metrics and KPIs
+- User roles and permissions
+- Data refresh frequency
+- Export requirements
+
+Step 2 (Beaver): Layout the grid
+- 12-column responsive grid
+- Widget sizing standards
+- Gutter and margin system
+- Breakpoint definitions
+
+Step 3 (Dolphin): Choose visualization types
+- KPI cards for single metrics
+- Line charts for trends
+- Bar charts for comparisons
+- Tables for detailed data
+
+Step 4 (Ant): Implement interactions
+- Filter mechanisms
+- Date range selectors
+- Drill-down capabilities
+- Export functions
+
+Final Output: Interactive dashboard with all widgets
+```
+
+---
+
+### 💻 Development Workflows
+
+#### Workflow 4: Full-Stack App Development
+
+**Purpose:** Build complete web application
+
+**Flow:**
+```
+Step 1 (Eagle): Define product architecture
+- Core features list
+- User flows and journeys
+- Data models and relationships
+- API boundaries
+
+Step 2 (Beaver): Set up project structure
+- Repository initialization
+- Dependencies configuration
+- Environment setup
+- Linting and formatting rules
+
+Step 3 (Ant): Implement feature by feature
+- Database schema
+- API endpoints
+- Frontend components
+- Integration testing
+
+Step 4 (Owl): Review and optimize
+- Code quality audit
+- Performance profiling
+- Security vulnerability check
+- Documentation completion
+
+Final Output: Production-ready application
+```
+
+---
+
+#### Workflow 5: API Design
+
+**Purpose:** Design RESTful or GraphQL API
+
+**Flow:**
+```
+Step 1 (Owl): Analyze requirements
+- Resource identification
+- Relationship mapping
+- Authentication needs
+- Rate limiting requirements
+
+Step 2 (Beaver): Define endpoints
+- HTTP methods selection
+- URL structure design
+- Request/response schemas
+- Error handling strategy
+
+Step 3 (Ant): Document comprehensively
+- OpenAPI/Swagger specification
+- Example requests/responses
+- Authentication docs
+- Rate limit documentation
+
+Step 4 (Dolphin): Add advanced features
+- Pagination strategies
+- Filtering and sorting
+- Caching headers
+- Webhook support
+
+Final Output: Complete API specification
+```
+
+---
+
+#### Workflow 6: Database Schema Design
+
+**Purpose:** Design scalable database structure
+
+**Flow:**
+```
+Step 1 (Eagle): Map data requirements
+- Entity identification
+- Relationship types (1:1, 1:N, N:N)
+- Data volume estimation
+- Performance requirements
+
+Step 2 (Beaver): Design schema
+- Table/collection definitions
+- Column types and constraints
+- Index strategy
+- Foreign key relationships
+
+Step 3 (Ant): Implement migrations
+- Up migration scripts
+- Seed data scripts
+- Rollback procedures
+- Migration testing
+
+Step 4 (Owl): Optimize for performance
+- Query analysis
+- Index refinement
+- Partitioning strategy
+- Backup procedures
+
+Final Output: Production database schema
+```
+
+---
+
+### 📈 Business & Strategy Workflows
+
+#### Workflow 7: Product Roadmap Planning
+
+**Purpose:** Create strategic product roadmap
+
+**Flow:**
+```
+Step 1 (Owl): Analyze current state
+- Market analysis
+- Competitive landscape
+- User feedback review
+- Technical debt assessment
+
+Step 2 (Eagle): Define vision
+- 12-month product vision
+- Key objectives and OKRs
+- Success metrics
+- Risk identification
+
+Step 3 (Rabbit): Generate initiatives
+- Feature proposals
+- Technical improvements
+- Infrastructure needs
+- Research projects
+
+Step 4 (Beaver): Prioritize and sequence
+- Impact vs effort scoring
+- Dependency mapping
+- Resource allocation
+- Milestone planning
+
+Final Output: Prioritized product roadmap with timeline
+```
+
+---
+
+#### Workflow 8: Market Research
+
+**Purpose:** Conduct comprehensive market analysis
+
+**Flow:**
+```
+Step 1 (Owl): Define research scope
+- Target market definition
+- Competitor list
+- Research questions
+- Data sources identification
+
+Step 2 (Elephant): Gather insights
+- Industry reports review
+- Competitor analysis
+- Customer interview synthesis
+- Trend analysis
+
+Step 3 (Ant): Break down findings
+- SWOT analysis
+- Market size estimation
+- User persona development
+- Opportunity mapping
+
+Step 4 (Eagle): Synthesize recommendations
+- Strategic positioning
+- Go-to-market suggestions
+- Pricing strategy
+- Risk mitigation
+
+Final Output: Market research report with actionable insights
+```
+
+---
+
+#### Workflow 9: User Onboarding Flow
+
+**Purpose:** Design effective user onboarding
+
+**Flow:**
+```
+Step 1 (Owl): Understand user psychology
+- Activation moment identification
+- Friction point analysis
+- Value moment mapping
+- Drop-off prediction
+
+Step 2 (Dolphin): Generate onboarding ideas
+- Welcome emails
+- Interactive tutorials
+- Progress indicators
+- Social proof moments
+
+Step 3 (Beaver): Design the flow
+- Sign-up to first value
+- Step-by-step guidance
+- Progress tracking
+- Celebration moments
+
+Step 4 (Ant): Implement and test
+- A/B test variations
+- Analytics tracking
+- Feedback loops
+- Iteration cycles
+
+Final Output: Complete onboarding flow design
+```
+
+---
+
+### 📝 Content Workflows
+
+#### Workflow 10: Blog Content Creation
+
+**Purpose:** Write SEO-optimized blog posts
+
+**Flow:**
+```
+Step 1 (Owl): Research topic
+- Keyword analysis
+- Search intent identification
+- Competitor content review
+- Topic cluster mapping
+
+Step 2 (Eagle): Structure outline
+- H2/H3 hierarchy
+- Key points to cover
+- Data and statistics to include
+- Internal linking strategy
+
+Step 3 (Ant): Write section by section
+- Compelling introduction
+- Body paragraphs with examples
+- Visual element suggestions
+- Strong conclusion
+
+Step 4 (Owl): Optimize for SEO
+- Meta title and description
+- URL structure
+- Alt text for images
+- Schema markup
+
+Final Output: Ready-to-publish blog post
+```
+
+---
+
+#### Workflow 11: Video Content Strategy
+
+**Purpose:** Plan and create video content
+
+**Flow:**
+```
+Step 1 (Rabbit): Generate content angles
+- 10+ video topic ideas
+- Different formats (tutorial, vlog, review)
+- Audience variations
+- Trend adaptations
+
+Step 2 (Eagle): Select and strategize
+- Choose best topics
+- Define target audience
+- Set success metrics
+- Plan distribution channels
+
+Step 3 (Beaver): Create production plan
+- Script outline
+- B-roll requirements
+- Thumbnail concepts
+- Posting schedule
+
+Step 4 (Ant): Execute and optimize
+- Filming and editing
+- SEO optimization
+- Engagement strategy
+- Analytics review
+
+Final Output: Video content calendar and production assets
+```
+
+---
+
+#### Workflow 12: Email Marketing Campaign
+
+**Purpose:** Design email marketing sequence
+
+**Flow:**
+```
+Step 1 (Owl): Define customer journey
+- Funnel stages
+- Trigger events
+- Segment definitions
+- Goal mapping
+
+Step 2 (Rabbit): Generate email variations
+- Welcome series ideas
+- Promo sequences
+- Re-engagement campaigns
+- Post-purchase flows
+
+Step 3 (Beaver): Write each email
+- Subject line optimization
+- Preview text
+- Body copy
+- CTA buttons
+
+Step 4 (Ant): Set up automation
+- Trigger conditions
+- Timing intervals
+- A/B test variants
+- Unsubscribe handling
+
+Final Output: Complete email campaign automation
+```
+
+---
+
+### 🔧 Automation Workflows
+
+#### Workflow 13: Workflow Automation
+
+**Purpose:** Design automated business process
+
+**Flow:**
+```
+Step 1 (Owl): Analyze current process
+- Manual steps documentation
+- Time and resource costs
+- Error points identification
+- Bottleneck analysis
+
+Step 2 (Beaver): Design automation
+- Trigger definition
+- Action sequence
+- Conditional logic
+- Error handling
+
+Step 3 (Ant): Implement step by step
+- API integrations
+- Data transformations
+- Notification system
+- Logging mechanism
+
+Step 4 (Owl): Test and monitor
+- Edge case testing
+- Performance monitoring
+- Alert configuration
+- Documentation
+
+Final Output: Production automation workflow
+```
+
+---
+
+#### Workflow 14: CI/CD Pipeline Setup
+
+**Purpose:** Build continuous integration/deployment
+
+**Flow:**
+```
+Step 1 (Eagle): Define pipeline stages
+- Code checkout
+- Dependency installation
+- Linting and formatting
+- Unit testing
+- Integration testing
+- Build creation
+- Deployment trigger
+
+Step 2 (Beaver): Configure tools
+- GitHub Actions / GitLab CI
+- Environment variables
+- Secret management
+- Cache strategies
+
+Step 3 (Ant): Set up each stage
+- Test runner configuration
+- Build script creation
+- Deployment scripts
+- Rollback procedures
+
+Step 4 (Owl): Implement monitoring
+- Build status notifications
+- Deployment tracking
+- Performance metrics
+- Error alerting
+
+Final Output: Complete CI/CD pipeline configuration
+```
+
+---
+
+### 🎯 Problem-Solving Workflows
+
+#### Workflow 15: Debug Complex Issue
+
+**Purpose:** Systematically debug production issues
+
+**Flow:**
+```
+Step 1 (Owl): Gather information
+- Error logs review
+- User reports collection
+- Environment details
+- Recent changes timeline
+
+Step 2 (Ant): Isolate the problem
+- Reproduce locally
+- Binary search debugging
+- Variable elimination
+- Hypothesis formation
+
+Step 3 (Beaver): Implement fix
+- Root cause addressing
+- Solution implementation
+- Test case addition
+- Code review准备
+
+Step 4 (Eagle): Prevent recurrence
+- Add monitoring
+- Update documentation
+- Process improvement
+- Team knowledge sharing
+
+Final Output: Fixed issue with prevention measures
+```
+
+---
+
+#### Workflow 16: Technical Debt Resolution
+
+**Purpose:** Address accumulated technical debt
+
+**Flow:**
+```
+Step 1 (Owl): Audit current state
+- Code complexity analysis
+- Test coverage review
+- Dependency age check
+- Performance baseline
+
+Step 2 (Eagle): Prioritize debt items
+- Impact assessment
+- Effort estimation
+- Risk evaluation
+- Dependency mapping
+
+Step 3 (Beaver): Execute refactoring
+- Smallest valuable first
+- Preserve behavior
+- Add tests first
+- Incremental changes
+
+Step 4 (Ant): Validate improvements
+- Performance verification
+- Test coverage increase
+- Code review completion
+- Documentation update
+
+Final Output: Reduced technical debt with verified improvements
+```
+
+---
+
+### 📊 Data & Analytics Workflows
+
+#### Workflow 17: Analytics Implementation
+
+**Purpose:** Set up proper analytics tracking
+
+**Flow:**
+```
+Step 1 (Owl): Define metrics framework
+- Business objectives
+- Key metrics identification
+- User journey mapping
+- Success events
+
+Step 2 (Beaver): Plan tracking setup
+- Event taxonomy
+- Property definitions
+- User identification strategy
+- Cross-domain tracking
+
+Step 3 (Ant): Implement tracking
+- SDK installation
+- Event implementation
+- Conversion tracking
+- Custom dimensions
+
+Step 4 (Dolphin): Create dashboards
+- Real-time monitoring
+- Funnel analysis
+- Cohort tracking
+- Custom reports
+
+Final Output: Complete analytics implementation with dashboards
+```
+
+---
+
+#### Workflow 18: Data Pipeline Construction
+
+**Purpose:** Build reliable data processing pipeline
+
+**Flow:**
+```
+Step 1 (Eagle): Design data architecture
+- Source identification
+- Transformation logic
+- Storage requirements
+- Delivery destinations
+
+Step 2 (Beaver): Build pipeline components
+- Extract scripts
+- Transform functions
+- Load processes
+- Validation checks
+
+Step 3 (Ant): Implement error handling
+- Retry logic
+- Dead letter queues
+- Alert mechanisms
+- Recovery procedures
+
+Step 4 (Owl): Optimize and monitor
+- Performance tuning
+- Cost optimization
+- Quality monitoring
+- SLA tracking
+
+Final Output: Production data pipeline with monitoring
+```
+
+---
+
+### Quick Reference: Workflow Selection Guide
+
+| Use Case Category | Recommended Workflows |
+|------------------|---------------------|
+| **Design & UI** | 1, 2, 3 |
+| **Development** | 4, 5, 6 |
+| **Business Strategy** | 7, 8, 9 |
+| **Content Creation** | 10, 11, 12 |
+| **Automation** | 13, 14 |
+| **Problem-Solving** | 15, 16 |
+| **Data & Analytics** | 17, 18 |
+
+---
+
+☑ **Quality Checklist — Workflows**
+
+- [ ] Purpose clearly defined before starting
+- [ ] Each step has measurable output
+- [ ] Logical progression from analysis to action
+- [ ] Includes validation/refinement step
+- [ ] Final output is actionable deliverable
 
 ---
 
