@@ -1,0 +1,194 @@
+{
+  "sitemap": [
+    {"page_slug": "master-reference", "page_title": "AI Prompt Engineering Master Reference", "description": "Complete prompt library for AI practitioners - frameworks, techniques, modes"},
+    {"page_slug": "quick-start", "page_title": "Quick Start Guide", "description": "Install and configure promptc OS framework quickly"},
+    {"page_slug": "master-system-prompt", "page_title": "Master System Prompt", "description": "Core system prompt for AI assistants - expert-level responses"},
+    {"page_slug": "advocate-mode", "page_title": "Advocate Mode", "description": "AI advocacy framework for protecting user interests"},
+    {"page_slug": "secret-sauce-modifiers", "page_title": "Secret Sauce Modifiers", "description": "Power phrases to boost AI output quality instantly"},
+    {"page_slug": "eight-layer-architecture", "page_title": "8-Layer Prompt Architecture", "description": "Universal prompt structure for production-quality outputs"},
+    {"page_slug": "animal-thinking-modes", "page_title": "Animal Thinking Modes", "description": "7 thinking modes - Rabbit, Owl, Ant, Eagle, Dolphin, Beaver, Elephant"},
+    {"page_slug": "meta-prompting", "page_title": "Meta Prompting Framework", "description": "Transform vague concepts into structured briefs"},
+    {"page_slug": "enhancement-protocols", "page_title": "Enhancement Protocols", "description": "Self-refinement, chain-of-thought, tweak protocols"},
+    {"page_slug": "structured-output", "page_title": "Structured Output Techniques", "description": "JSON techniques for reliable AI responses"},
+    {"page_slug": "web-app-framework", "page_title": "Web App Prompt Framework", "description": "Generate complete web applications with AI"},
+    {"page_slug": "powerup-brand", "page_title": "powerUP Brand System", "description": "Brand guidelines for powerUP design system"},
+    {"page_slug": "design-vocabulary", "page_title": "Design Vocabulary", "description": "27 visual design terms for AI-generated UI/UX"},
+    {"page_slug": "typography", "page_title": "Typography Combos", "description": "Gen-Z typography combinations and font pairings"},
+    {"page_slug": "prompt-templates", "page_title": "Prompt Templates", "description": "Ready-to-use templates for web, mobile, brand, dashboard"},
+    {"page_slug": "prompt-lint-rules", "page_title": "Prompt Lint Rules", "description": "6 rules to validate and improve prompts"},
+    {"page_slug": "quality-checklist", "page_title": "Prompt Quality Checklist", "description": "Complete checklist for prompt quality assurance"},
+    {"page_slug": "scoring-dimensions", "page_title": "Prompt Scoring Dimensions", "description": "Evaluate prompts with clarity, structure, constraints, predictability"},
+    {"page_slug": "common-workflows", "page_title": "Common Workflows", "description": "18 step-by-step workflows for design, development, business, content"}
+  ],
+  "pages": {
+    "master-reference": {
+      "sections": [
+        {"type": "hero", "heading": "AI Prompt Engineering Master Reference", "content": "Complete reusable prompt library for AI practitioners - covers prompt architecture, thinking modes, enhancement protocols, structured output, web app generation, brand systems, design vocabulary, typography, and quality scoring."},
+        {"type": "toc", "heading": "Table of Contents", "content": "18 comprehensive sections from Quick Start to Common Workflows"},
+        {"type": "features", "heading": "Key Features", "content": "8-Layer Architecture, 7 Animal Thinking Modes, 27 Design Vocabulary Terms, 18 Workflows"}
+      ],
+      "seo": {"meta_title": "AI Prompt Engineering Master Reference | promptc OS v2026", "meta_description": "Complete prompt engineering framework with 8-layer architecture, animal thinking modes, design vocabulary, and 18 common workflows. For AI practitioners."}
+    },
+    "quick-start": {
+      "sections": [
+        {"type": "install", "heading": "Install & Get Started", "content": "bash install script and manual installation instructions"},
+        {"type": "reference", "heading": "Quick Reference", "content": "Add to AI instructions for immediate use"}
+      ],
+      "seo": {"meta_title": "Quick Start Guide | promptc OS", "meta_description": "Install promptc OS framework in seconds. Quick setup guide for AI prompt engineering."}
+    },
+    "master-system-prompt": {
+      "sections": [
+        {"type": "prompt", "heading": "Master System Prompt", "content": "10 rules for expert AI assistance - direct, actionable, advocacy-focused"},
+        {"type": "usage", "heading": "When to Use", "content": "Paste into User Rules, Custom Instructions, or System Prompt field"}
+      ],
+      "seo": {"meta_title": "Master System Prompt | Expert AI Assistant", "meta_description": "Production-ready system prompt for AI assistants. 10 rules for expert-level responses."}
+    },
+    "advocate-mode": {
+      "sections": [
+        {"type": "prompt", "heading": "Advocate Mode", "content": "AI advocacy framework - warns of mistakes, suggests better approaches, prioritizes long-term success"},
+        {"type": "usage", "heading": "When to Use", "content": "Start of important sessions requiring strategic thinking"}
+      ],
+      "seo": {"meta_title": "Advocate Mode | AI That Protects Your Interests", "meta_description": "AI framework that advocates for your interests, warns of mistakes, and optimizes for long-term success."}
+    },
+    "secret-sauce-modifiers": {
+      "sections": [
+        {"type": "table", "heading": "Secret Sauce Modifiers", "content": "10 power phrases: act as expert, think step by step, give 80/20 version, be brutally honest, rank by impact"}
+      ],
+      "seo": {"meta_title": "Secret Sauce Modifiers | Boost AI Output Quality", "meta_description": "10 phrases to instantly boost AI output quality. Power modifiers for better results."}
+    },
+    "eight-layer-architecture": {
+      "sections": [
+        {"type": "overview", "heading": "8-Layer Prompt Architecture", "content": "ROLE → CONTEXT → OBJECTIVE → CONSTRAINTS → AESTHETIC → PLANNING → OUTPUT → REFINEMENT"},
+        {"type": "template", "heading": "Full Template", "content": "Complete template with all 8 layers and purpose descriptions"},
+        {"type": "table", "heading": "Layer Breakdown", "content": "Each layer's purpose and what missing it causes"}
+      ],
+      "seo": {"meta_title": "8-Layer Prompt Architecture | Production Quality Prompts", "meta_description": "Universal 8-layer structure for production-quality AI outputs. Role, Context, Objective, Constraints, Aesthetic, Planning, Output, Refinement."}
+    },
+    "animal-thinking-modes": {
+      "sections": [
+        {"type": "overview", "heading": "Animal Thinking Modes", "content": "7 modes: Rabbit (multiply ideas), Owl (deep analysis), Ant (break into steps), Eagle (big picture), Dolphin (creative), Beaver (build systems), Elephant (cross-field)"},
+        {"type": "templates", "heading": "Individual Mode Templates", "content": "Full prompt templates for each animal mode"},
+        {"type": "chains", "heading": "Mode Chains (Power Combos)", "content": "6 pre-built chains: Eagle→Beaver→Ant, Owl→Dolphin→Elephant, Rabbit→Eagle→Ant"}
+      ],
+      "seo": {"meta_title": "Animal Thinking Modes | 7 AI Thinking Frameworks", "meta_description": "7 thinking modes for AI: Rabbit, Owl, Ant, Eagle, Dolphin, Beaver, Elephant. Plus 6 power combos for complex tasks."}
+    },
+    "meta-prompting": {
+      "sections": [
+        {"type": "overview", "heading": "Meta Prompting Framework", "content": "Transform vague concepts into structured briefs before generating"},
+        {"type": "templates", "heading": "Templates", "content": "Universal, Mobile, and Web meta prompts"},
+        {"type": "comparison", "heading": "Mobile vs Web Differences", "content": "Navigation, touch targets, interactions, constraints, stack, animation approaches"}
+      ],
+      "seo": {"meta_title": "Meta Prompting Framework | Transform Vague Ideas", "meta_description": "AI framework for restructuring vague concepts into structured briefs. Mobile and web meta prompts included."}
+    },
+    "enhancement-protocols": {
+      "sections": [
+        {"type": "refinement", "heading": "Self-Refinement Loop", "content": "Generate → Critique → Refine structure → Refine polish → Output"},
+        {"type": "cot", "heading": "Chain-of-Thought (CoT)", "content": "Append 'think step by step' for complex multi-step flows"},
+        {"type": "consistency", "heading": "Self-Consistency", "content": "Generate 6-12 variants, identify patterns, merge best attributes"},
+        {"type": "tweak", "heading": "Tweak Protocol", "content": "Change one variable at a time for precision iteration"}
+      ],
+      "seo": {"meta_title": "Enhancement Protocols | Improve AI Outputs", "meta_description": "Self-refinement, chain-of-thought, self-consistency, and tweak protocols for better AI outputs."}
+    },
+    "structured-output": {
+      "sections": [
+        {"type": "rule", "heading": "Global JSON Rule", "content": "Respond exclusively with valid JSON - no explanations, no markdown fences"},
+        {"type": "techniques", "heading": "4 Techniques", "content": "Role+Schema, Few-Shot Examples, CoT+Structured, Validation Guardrails"},
+        {"type": "guide", "heading": "Which Technique to Use", "content": "Decision matrix for technique selection"}
+      ],
+      "seo": {"meta_title": "Structured Output Techniques | JSON for AI", "meta_description": "4 techniques for reliable JSON output from AI. Role+Schema, Few-Shot, Chain-of-Thought, Validation."}
+    },
+    "web-app-framework": {
+      "sections": [
+        {"type": "master", "heading": "Master System Prompt (Beaver Mode)", "content": "Full-stack developer + product designer prompt for complete web apps"},
+        {"type": "variations", "heading": "10 Prompt Variations", "content": "Developer, Product Designer, Startup Founder, Interactive Infographic, Gen-Z UI, AI Product Builder, No-Code Friendly, Educational Demo, Portfolio, Experimental Creative"},
+        {"type": "rule", "heading": "Three Layers Rule", "content": "FUNCTION → DESIGN → TECHNOLOGY"},
+        {"type": "concepts", "heading": "Dolphin Mode - 10 Creative UI Concepts", "content": "Scroll as Navigation, Skill Map, AI-assisted UI, Card micro-apps, Data storytelling, Gesture-first, AI search, Live theme switcher, Canvas mode, Interactive infographic"}
+      ],
+      "seo": {"meta_title": "Web App Prompt Framework | Generate Full Apps", "meta_description": "Complete framework for generating web applications with AI. 10 audience variations, Three Layers Rule, creative UI concepts."}
+    },
+    "powerup-brand": {
+      "sections": [
+        {"type": "essence", "heading": "Brand Essence", "content": "Activated potential. Directed energy. Intelligent lift."},
+        {"type": "colors", "heading": "Color Palette", "content": "Background: #0B0D10, #14161A. Accents: cyan #4DFFFF, violet #7B5CFF, magenta #FF4FD8, amber #FFB000"},
+        {"type": "typography", "heading": "Typography", "content": "Display: Inter, Space Grotesk. Body: Inter. Mono: JetBrains Mono"},
+        {"type": "motion", "heading": "Motion", "content": "Bias: upward. Easing: cubic-bezier(0.16, 1, 0.3, 1). Duration: 180ms/320ms/4200ms"},
+        {"type": "rules", "heading": "Design Rules", "content": "Typography-first, dark-mode native, one accent per screen, white space = intelligence"}
+      ],
+      "seo": {"meta_title": "powerUP Brand System | Design Guidelines", "meta_description": "powerUP brand guidelines - colors, typography, motion, and design rules for consistent UI/UX."}
+    },
+    "design-vocabulary": {
+      "sections": [
+        {"type": "core", "heading": "Core Visual Effects", "content": "glassmorphism, brutalist ui, kinetic typography, bento grid, micro-interactions, neon accent, liquid gradient, dark-mode native"},
+        {"type": "motion", "heading": "Loading & Motion", "content": "skeleton loading, ambient motion, progressive disclosure, editorial layout"},
+        {"type": "advanced", "heading": "Advanced Effects", "content": "neo-brutalism, aurora gradients, noise grain, blur overlay, morph shapes, tilt 3d, custom cursor, particle systems, scanline effect, vignette, chromatic aberration, mesh gradient, claymorphism, fiber background, isotype system, duotone"},
+        {"type": "combos", "heading": "Design Combos with Synergies", "content": "12 combos: Glass+Bento, Brutal+Neon, Liquid+Ambient, Editorial+Bento, Micro+Skeleton, Full Immersive, Cyberpunk Glow, Premium Minimal, Playful 3D, Fiber Tech, Cinematic, Isotype Data"}
+      ],
+      "seo": {"meta_title": "Design Vocabulary | 27 Terms for AI-Generated UI", "meta_description": "27 design vocabulary terms for precise AI-generated visuals. Plus 12 design combos with synergies."}
+    },
+    "typography": {
+      "sections": [
+        {"type": "combos", "heading": "Ultra-Modern Gen-Z Typography Combos", "content": "Space Grotesk+JetBrains Mono (tech), Syne Bold+JetBrains Mono (creative), Clash Display+Space Mono (luxury), Inter Tight+JetBrains Mono (dashboards)"},
+        {"type": "infographic", "heading": "Infographic Typography", "content": "Data Viz: Space Grotesk+Inter+JetBrains Mono. Creative: Syne+Space Grotesk+Clash Display. Mobile: Inter Tight+Inter+SF Pro"}
+      ],
+      "seo": {"meta_title": "Typography Combos | Gen-Z Font Pairings", "meta_description": "Modern typography combinations for AI-generated designs. Display fonts, mono pairings, use-case recommendations."}
+    },
+    "prompt-templates": {
+      "sections": [
+        {"type": "ready", "heading": "Ready-to-Use Templates", "content": "Web, Mobile, Brand, Landing Page, Dashboard, API Design"},
+        {"type": "task", "heading": "Task-Specific Prompts", "content": "YouTube Content Creation, Coding/Engineering, Business/Strategy, Research/Summarizing"}
+      ],
+      "seo": {"meta_title": "Prompt Templates | Ready-to-Use AI Prompts", "meta_description": "Ready-to-use prompt templates for web, mobile, brand, landing page, dashboard, API, YouTube, coding, business."}
+    },
+    "prompt-lint-rules": {
+      "sections": [
+        {"type": "rules", "heading": "6 Prompt Lint Rules", "content": "missing-role, missing-constraints, missing-objective, vague-language, missing-output-format, missing-planning"},
+        {"type": "words", "heading": "Vague Words to Always Flag", "content": "nice→clear/intentional, cool→high-contrast/dynamic, modern→[specific], awesome→visually striking, good design→typographically strong"}
+      ],
+      "seo": {"meta_title": "Prompt Lint Rules | Validate AI Prompts", "meta_description": "6 rules to validate and improve AI prompts. Plus vague words replacement guide."}
+    },
+    "quality-checklist": {
+      "sections": [
+        {"type": "structure", "heading": "Structure", "content": "Role defined, goal clear, objective stated, constraints listed"},
+        {"type": "design", "heading": "Design (UI/UX)", "content": "Platform specified, 3+ keywords, animation library named, mobile-first"},
+        {"type": "technical", "heading": "Technical", "content": "Stack specified, output format requested, WCAG AA, 60fps budget"},
+        {"type": "quality", "heading": "Quality", "content": "No vague words, refinement included, interaction metaphor defined, JSON rules appended"},
+        {"type": "mode", "heading": "Animal Mode", "content": "Mode selected or chained for complex goals"}
+      ],
+      "seo": {"meta_title": "Prompt Quality Checklist | Complete QA Guide", "meta_description": "Complete quality checklist for AI prompts. Structure, design, technical, quality, and animal mode sections."}
+    },
+    "scoring-dimensions": {
+      "sections": [
+        {"type": "dimensions", "heading": "Prompt Scoring Dimensions", "content": "Clarity (10), Structure (10), Constraints (10), Predictability (10), Overall (10)"},
+        {"type": "formula", "heading": "Scoring Formula", "content": "Overall = (Clarity + Structure + Constraints + Predictability) / 4"},
+        {"type": "interpretation", "heading": "Score Interpretation", "content": "9-10 production ready, 7-8 good gaps, 5-6 partial, 3-4 weak, 1-2 start over"}
+      ],
+      "seo": {"meta_title": "Prompt Scoring Dimensions | A/B Testing Prompts", "meta_description": "Evaluate and compare AI prompts with clarity, structure, constraints, predictability dimensions. Scoring formula included."}
+    },
+    "common-workflows": {
+      "sections": [
+        {"type": "overview", "heading": "18 Common Workflows", "content": "Step-by-step workflows for common use-cases with Animal Thinking Mode for each step"},
+        {"type": "design", "heading": "Design & UI/UX (1-3)", "content": "Design System Creation, Landing Page Design, Dashboard Design"},
+        {"type": "dev", "heading": "Development (4-6)", "content": "Full-Stack App Development, API Design, Database Schema Design"},
+        {"type": "business", "heading": "Business & Strategy (7-9)", "content": "Product Roadmap Planning, Market Research, User Onboarding Flow"},
+        {"type": "content", "heading": "Content (10-12)", "content": "Blog Content Creation, Video Content Strategy, Email Marketing Campaign"},
+        {"type": "automation", "heading": "Automation (13-14)", "content": "Workflow Automation, CI/CD Pipeline Setup"},
+        {"type": "problemsolving", "heading": "Problem-Solving (15-16)", "content": "Debug Complex Issue, Technical Debt Resolution"},
+        {"type": "data", "heading": "Data & Analytics (17-18)", "content": "Analytics Implementation, Data Pipeline Construction"},
+        {"type": "guide", "heading": "Mode Selection Guide", "content": "Rabbit=ideas, Owl=analysis, Ant=implementation, Eagle=strategy, Dolphin=creative, Beaver=systems, Elephant=cross-field"}
+      ],
+      "seo": {"meta_title": "18 Common Workflows | Step-by-Step AI Guides", "meta_description": "18 comprehensive workflows: design, development, business, content, automation, problem-solving, data. Each with 4 steps and animal modes."}
+    }
+  },
+  "global": {
+    "site_title": "promptc OS - AI Prompt Engineering Master Reference",
+    "tagline": "Complete prompt library for AI practitioners",
+    "color_palette": "Primary: #7B5CFF (violet), Accent: #4DFFFF (cyan), Background: #0B0D10 (void black)"
+  },
+  "image_prompts": [
+    "Hero banner for AI prompt engineering framework with neural network visual",
+    "Icon set for 7 animal thinking modes - rabbit owl ant eagle dolphin beaver elephant",
+    "Infographic showing 8-layer prompt architecture flow",
+    "Dashboard mockup showing design vocabulary terms in action",
+    "Typography specimen displaying Space Grotesk Syne Clash Display Inter Tight fonts"
+  ]
+}
