@@ -840,13 +840,41 @@ Overall = (Clarity + Structure + Constraints + Predictability) / 4
 
 Complete step-by-step workflows for common use-cases. Each workflow shows the exact flow from beginning to final output.
 
+> **How to use:** Select the workflow matching your use-case, then follow each step in order. Each step specifies which Animal Thinking Mode to apply.
+
+### Quick Reference: Workflow Selection
+
+| # | Workflow | Purpose | Steps | Best For |
+|---|----------|---------|-------|----------|
+| 1 | Design System Creation | Build complete design system | 4 | New products, rebrands |
+| 2 | Landing Page Design | High-conversion landing page | 4 | Marketing, startups |
+| 3 | Dashboard Design | Data visualization dashboard | 4 | Analytics, SaaS products |
+| 4 | Full-Stack App Development | Complete web application | 4 | Product builds |
+| 5 | API Design | RESTful/GraphQL API | 4 | Backend development |
+| 6 | Database Schema Design | Scalable database structure | 4 | Data modeling |
+| 7 | Product Roadmap Planning | Strategic roadmap | 4 | Product management |
+| 8 | Market Research | Market analysis | 4 | Business strategy |
+| 9 | User Onboarding Flow | Activation flow design | 4 | Product growth |
+| 10 | Blog Content Creation | SEO blog posts | 4 | Content marketing |
+| 11 | Video Content Strategy | Video content planning | 4 | YouTube, social media |
+| 12 | Email Marketing Campaign | Email sequences | 4 | Marketing automation |
+| 13 | Workflow Automation | Business process automation | 4 | Operations, efficiency |
+| 14 | CI/CD Pipeline Setup | DevOps pipeline | 4 | Development ops |
+| 15 | Debug Complex Issue | Production debugging | 4 | Engineering |
+| 16 | Technical Debt Resolution | Code refactoring | 4 | Engineering |
+| 17 | Analytics Implementation | Tracking setup | 4 | Data teams |
+| 18 | Data Pipeline Construction | ETL pipeline building | 4 | Data engineering |
+
+---
+
 ### 🎨 Design & UI/UX Workflows
 
 #### Workflow 1: Design System Creation
 
 **Purpose:** Build a complete design system from scratch
 
-**Flow:**
+**Apply Mode:** Eagle → Beaver → Ant → Owl
+
 ```
 Step 1 (Eagle): Define long-term design vision
 - Brand positioning and personality
@@ -870,9 +898,9 @@ Step 4 (Owl): Validate consistency
 - Check all components follow the system
 - Verify accessibility contrast ratios
 - Test responsive behavior
-
-Final Output: Complete design system documentation
 ```
+
+**Final Output:** Complete design system documentation with color tokens, typography scale, and component library
 
 ---
 
@@ -880,7 +908,8 @@ Final Output: Complete design system documentation
 
 **Purpose:** Create high-conversion landing page
 
-**Flow:**
+**Apply Mode:** Rabbit → Eagle → Beaver → Ant
+
 ```
 Step 1 (Rabbit): Generate 10+ headline variations
 - Problem-aware headlines
@@ -906,9 +935,9 @@ Step 4 (Ant): Optimize for conversion
 - Form field minimization
 - Loading states
 - Mobile touch targets
-
-Final Output: Complete landing page design with all sections
 ```
+
+**Final Output:** Complete landing page design with all sections and conversion optimizations
 
 ---
 
@@ -916,7 +945,8 @@ Final Output: Complete landing page design with all sections
 
 **Purpose:** Build data visualization dashboard
 
-**Flow:**
+**Apply Mode:** Eagle → Beaver → Dolphin → Ant
+
 ```
 Step 1 (Eagle): Define data requirements
 - Key metrics and KPIs
@@ -941,9 +971,9 @@ Step 4 (Ant): Implement interactions
 - Date range selectors
 - Drill-down capabilities
 - Export functions
-
-Final Output: Interactive dashboard with all widgets
 ```
+
+**Final Output:** Interactive dashboard with all widgets and filtering capabilities
 
 ---
 
@@ -953,7 +983,8 @@ Final Output: Interactive dashboard with all widgets
 
 **Purpose:** Build complete web application
 
-**Flow:**
+**Apply Mode:** Eagle → Beaver → Ant → Owl
+
 ```
 Step 1 (Eagle): Define product architecture
 - Core features list
@@ -978,9 +1009,9 @@ Step 4 (Owl): Review and optimize
 - Performance profiling
 - Security vulnerability check
 - Documentation completion
-
-Final Output: Production-ready application
 ```
+
+**Final Output:** Production-ready application with full documentation
 
 ---
 
@@ -988,7 +1019,8 @@ Final Output: Production-ready application
 
 **Purpose:** Design RESTful or GraphQL API
 
-**Flow:**
+**Apply Mode:** Owl → Beaver → Ant → Dolphin
+
 ```
 Step 1 (Owl): Analyze requirements
 - Resource identification
@@ -1013,9 +1045,9 @@ Step 4 (Dolphin): Add advanced features
 - Filtering and sorting
 - Caching headers
 - Webhook support
-
-Final Output: Complete API specification
 ```
+
+**Final Output:** Complete API specification with OpenAPI documentation
 
 ---
 
@@ -1023,7 +1055,8 @@ Final Output: Complete API specification
 
 **Purpose:** Design scalable database structure
 
-**Flow:**
+**Apply Mode:** Eagle → Beaver → Ant → Owl
+
 ```
 Step 1 (Eagle): Map data requirements
 - Entity identification
@@ -1048,9 +1081,9 @@ Step 4 (Owl): Optimize for performance
 - Index refinement
 - Partitioning strategy
 - Backup procedures
-
-Final Output: Production database schema
 ```
+
+**Final Output:** Production database schema with migration scripts
 
 ---
 
@@ -1060,7 +1093,8 @@ Final Output: Production database schema
 
 **Purpose:** Create strategic product roadmap
 
-**Flow:**
+**Apply Mode:** Owl → Eagle → Rabbit → Beaver
+
 ```
 Step 1 (Owl): Analyze current state
 - Market analysis
@@ -1085,9 +1119,9 @@ Step 4 (Beaver): Prioritize and sequence
 - Dependency mapping
 - Resource allocation
 - Milestone planning
-
-Final Output: Prioritized product roadmap with timeline
 ```
+
+**Final Output:** Prioritized product roadmap with timeline and milestones
 
 ---
 
@@ -1095,7 +1129,8 @@ Final Output: Prioritized product roadmap with timeline
 
 **Purpose:** Conduct comprehensive market analysis
 
-**Flow:**
+**Apply Mode:** Owl → Elephant → Ant → Eagle
+
 ```
 Step 1 (Owl): Define research scope
 - Target market definition
@@ -1120,9 +1155,9 @@ Step 4 (Eagle): Synthesize recommendations
 - Go-to-market suggestions
 - Pricing strategy
 - Risk mitigation
-
-Final Output: Market research report with actionable insights
 ```
+
+**Final Output:** Market research report with actionable insights and recommendations
 
 ---
 
@@ -1130,7 +1165,8 @@ Final Output: Market research report with actionable insights
 
 **Purpose:** Design effective user onboarding
 
-**Flow:**
+**Apply Mode:** Owl → Dolphin → Beaver → Ant
+
 ```
 Step 1 (Owl): Understand user psychology
 - Activation moment identification
@@ -1155,9 +1191,9 @@ Step 4 (Ant): Implement and test
 - Analytics tracking
 - Feedback loops
 - Iteration cycles
-
-Final Output: Complete onboarding flow design
 ```
+
+**Final Output:** Complete onboarding flow design with metrics and testing plan
 
 ---
 
@@ -1167,7 +1203,8 @@ Final Output: Complete onboarding flow design
 
 **Purpose:** Write SEO-optimized blog posts
 
-**Flow:**
+**Apply Mode:** Owl → Eagle → Ant → Owl
+
 ```
 Step 1 (Owl): Research topic
 - Keyword analysis
@@ -1192,9 +1229,9 @@ Step 4 (Owl): Optimize for SEO
 - URL structure
 - Alt text for images
 - Schema markup
-
-Final Output: Ready-to-publish blog post
 ```
+
+**Final Output:** Ready-to-publish blog post with SEO optimizations
 
 ---
 
@@ -1202,7 +1239,8 @@ Final Output: Ready-to-publish blog post
 
 **Purpose:** Plan and create video content
 
-**Flow:**
+**Apply Mode:** Rabbit → Eagle → Beaver → Ant
+
 ```
 Step 1 (Rabbit): Generate content angles
 - 10+ video topic ideas
@@ -1227,9 +1265,9 @@ Step 4 (Ant): Execute and optimize
 - SEO optimization
 - Engagement strategy
 - Analytics review
-
-Final Output: Video content calendar and production assets
 ```
+
+**Final Output:** Video content calendar with production assets
 
 ---
 
@@ -1237,7 +1275,8 @@ Final Output: Video content calendar and production assets
 
 **Purpose:** Design email marketing sequence
 
-**Flow:**
+**Apply Mode:** Owl → Rabbit → Beaver → Ant
+
 ```
 Step 1 (Owl): Define customer journey
 - Funnel stages
@@ -1262,9 +1301,9 @@ Step 4 (Ant): Set up automation
 - Timing intervals
 - A/B test variants
 - Unsubscribe handling
-
-Final Output: Complete email campaign automation
 ```
+
+**Final Output:** Complete email campaign automation with all sequences
 
 ---
 
@@ -1274,7 +1313,8 @@ Final Output: Complete email campaign automation
 
 **Purpose:** Design automated business process
 
-**Flow:**
+**Apply Mode:** Owl → Beaver → Ant → Owl
+
 ```
 Step 1 (Owl): Analyze current process
 - Manual steps documentation
@@ -1284,6 +1324,235 @@ Step 1 (Owl): Analyze current process
 
 Step 2 (Beaver): Design automation
 - Trigger definition
+- Action sequence
+- Conditional logic
+- Error handling
+
+Step 3 (Ant): Implement step by step
+- API integrations
+- Data transformations
+- Notification system
+- Logging mechanism
+
+Step 4 (Owl): Test and monitor
+- Edge case testing
+- Performance monitoring
+- Alert configuration
+- Documentation
+```
+
+**Final Output:** Production automation workflow with monitoring
+
+---
+
+#### Workflow 14: CI/CD Pipeline Setup
+
+**Purpose:** Build continuous integration/deployment
+
+**Apply Mode:** Eagle → Beaver → Ant → Owl
+
+```
+Step 1 (Eagle): Define pipeline stages
+- Code checkout
+- Dependency installation
+- Linting and formatting
+- Unit testing
+- Integration testing
+- Build creation
+- Deployment trigger
+
+Step 2 (Beaver): Configure tools
+- GitHub Actions / GitLab CI
+- Environment variables
+- Secret management
+- Cache strategies
+
+Step 3 (Ant): Set up each stage
+- Test runner configuration
+- Build script creation
+- Deployment scripts
+- Rollback procedures
+
+Step 4 (Owl): Implement monitoring
+- Build status notifications
+- Deployment tracking
+- Performance metrics
+- Error alerting
+```
+
+**Final Output:** Complete CI/CD pipeline with monitoring
+
+---
+
+### 🎯 Problem-Solving Workflows
+
+#### Workflow 15: Debug Complex Issue
+
+**Purpose:** Systematically debug production issues
+
+**Apply Mode:** Owl → Ant → Beaver → Eagle
+
+```
+Step 1 (Owl): Gather information
+- Error logs review
+- User reports collection
+- Environment details
+- Recent changes timeline
+
+Step 2 (Ant): Isolate the problem
+- Reproduce locally
+- Binary search debugging
+- Variable elimination
+- Hypothesis formation
+
+Step 3 (Beaver): Implement fix
+- Root cause addressing
+- Solution implementation
+- Test case addition
+- Code review preparation
+
+Step 4 (Eagle): Prevent recurrence
+- Add monitoring
+- Update documentation
+- Process improvement
+- Team knowledge sharing
+```
+
+**Final Output:** Fixed issue with prevention measures
+
+---
+
+#### Workflow 16: Technical Debt Resolution
+
+**Purpose:** Address accumulated technical debt
+
+**Apply Mode:** Owl → Eagle → Beaver → Ant
+
+```
+Step 1 (Owl): Audit current state
+- Code complexity analysis
+- Test coverage review
+- Dependency age check
+- Performance baseline
+
+Step 2 (Eagle): Prioritize debt items
+- Impact assessment
+- Effort estimation
+- Risk evaluation
+- Dependency mapping
+
+Step 3 (Beaver): Execute refactoring
+- Smallest valuable first
+- Preserve behavior
+- Add tests first
+- Incremental changes
+
+Step 4 (Ant): Validate improvements
+- Performance verification
+- Test coverage increase
+- Code review completion
+- Documentation update
+```
+
+**Final Output:** Reduced technical debt with verified improvements
+
+---
+
+### 📊 Data & Analytics Workflows
+
+#### Workflow 17: Analytics Implementation
+
+**Purpose:** Set up proper analytics tracking
+
+**Apply Mode:** Owl → Beaver → Ant → Dolphin
+
+```
+Step 1 (Owl): Define metrics framework
+- Business objectives
+- Key metrics identification
+- User journey mapping
+- Success events
+
+Step 2 (Beaver): Plan tracking setup
+- Event taxonomy
+- Property definitions
+- User identification strategy
+- Cross-domain tracking
+
+Step 3 (Ant): Implement tracking
+- SDK installation
+- Event implementation
+- Conversion tracking
+- Custom dimensions
+
+Step 4 (Dolphin): Create dashboards
+- Real-time monitoring
+- Funnel analysis
+- Cohort tracking
+- Custom reports
+```
+
+**Final Output:** Complete analytics implementation with dashboards
+
+---
+
+#### Workflow 18: Data Pipeline Construction
+
+**Purpose:** Build reliable data processing pipeline
+
+**Apply Mode:** Eagle → Beaver → Ant → Owl
+
+```
+Step 1 (Eagle): Design data architecture
+- Source identification
+- Transformation logic
+- Storage requirements
+- Delivery destinations
+
+Step 2 (Beaver): Build pipeline components
+- Extract scripts
+- Transform functions
+- Load processes
+- Validation checks
+
+Step 3 (Ant): Implement error handling
+- Retry logic
+- Dead letter queues
+- Alert mechanisms
+- Recovery procedures
+
+Step 4 (Owl): Optimize and monitor
+- Performance tuning
+- Cost optimization
+- Quality monitoring
+- SLA tracking
+```
+
+**Final Output:** Production data pipeline with monitoring
+
+---
+
+### Quick Reference: Mode Selection Guide
+
+| Mode | Best For |
+|------|----------|
+| **🐇 Rabbit** | Generating multiple ideas, variations, options |
+| **🦉 Owl** | Analysis, research, understanding, debugging |
+| **🐜 Ant** | Implementation, execution, detailed work |
+| **🦅 Eagle** | Strategy, vision, planning, big picture |
+| **🐬 Dolphin** | Creative solutions, innovative ideas |
+| **🦫 Beaver** | Building systems, architecture, structure |
+| **🐘 Elephant** | Cross-field insights, research, patterns |
+
+---
+
+☑ **Quality Checklist — Workflows**
+
+- [ ] Purpose clearly defined before starting
+- [ ] Each step has measurable output
+- [ ] Logical progression from analysis to action
+- [ ] Includes validation/refinement step
+- [ ] Final output is actionable deliverable
 - Action sequence
 - Conditional logic
 - Error handling
